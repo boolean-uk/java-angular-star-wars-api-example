@@ -1,6 +1,29 @@
 # JavaAngularStarwarsApi
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
+This project was generated with the following commands:
+
+```bash
+ng new java-angular-starwars-api --no-standalone --skip-tests
+
+npm install json-server
+
+ng generate service starwars --skip-tests 
+ng generate module people
+ng generate component people/list --skip-tests --no-standalone 
+ng generate component people/add --skip-tests --no-standalone
+ng generate component people/view --skip-tests --no-standalone
+ng generate component people/edit --skip-tests --no-standalone
+ng generate module layout
+ng generate component layout/menu --skip-tests --no-standalone
+```
+
+To run `json-server` and have it watch a file called `db.json` in the same directory you use
+
+```bash
+npx json-server db.json
+```
+
+By default that uses port 3000
 
 ## Development server
 
